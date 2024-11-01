@@ -20,13 +20,10 @@ public class Main {
 
         //Conteudo conteudo = new Curso(); -> POLIMORFISMO
 
-
-
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("Mentoria Java");
         mentoria1.setDescricao("descrição mentoria java");
         mentoria1.setData(LocalDate.now());
-
 
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
@@ -39,13 +36,11 @@ public class Main {
         dev.setNome("Preu");
         dev.inscreverBootcamp(bootcamp);
         System.out.println("Conteudos inscritos Preu" + dev.getConteudosInscritos());
-        dev.progredir();
-        dev.progredir();
+        dev.progredir("Java");
         System.out.println("----------------");
         System.out.println("Conteudos inscritos Preu" + dev.getConteudosInscritos());
         System.out.println("Conteudos concluidos Preu" + dev.getConteudosConcluidos());
         System.out.println(dev.calcularXp());
-
 
         System.out.println("-----------------------------------------------");
 
@@ -53,9 +48,7 @@ public class Main {
         dev2.setNome("João");
         dev2.inscreverBootcamp(bootcamp);
         System.out.println("Conteudos inscritos João" + dev2.getConteudosInscritos());
-        dev2.progredir();
-        dev2.progredir();
-        dev2.progredir();
+        dev2.progredir("Mentoria Java");
         System.out.println("----------------");
         System.out.println("Conteudos inscritos Preu" + dev.getConteudosInscritos());
         System.out.println("Conteudos concluidos João" + dev2.getConteudosConcluidos());
